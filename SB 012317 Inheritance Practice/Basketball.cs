@@ -14,8 +14,10 @@ namespace SB_012317_Inheritance_Practice
         protected int overtimeMin;
 
         //constructors
-        public Basketball()
+        public Basketball(string position) : base("LeBron James")
         {
+            this.position = position;
+
             BallShape = "round";
 
             Console.WriteLine("Is there any overtime? Enter yes or no:\n");
@@ -47,9 +49,13 @@ namespace SB_012317_Inheritance_Practice
         //methods
         public void PrintBallShape()
         {
+            this.Message();
             Console.WriteLine("\nIn basketball, the ball is " + BallShape + ".\n");
         }
-
+        public void BestPlayer()
+        {
+            Console.WriteLine("The best player, " + bestPlayer + ", plays " + position + ".\n");
+        }
         public void PrintTimeMin()
         {
             if (Overtime == false)

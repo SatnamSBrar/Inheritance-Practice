@@ -12,6 +12,8 @@ namespace SB_012317_Inheritance_Practice
         private string ballShape;
         private int timeMin;
         private bool overtime;
+        protected string bestPlayer;
+        protected string position;
 
         //properties
         protected string BallShape
@@ -28,6 +30,21 @@ namespace SB_012317_Inheritance_Practice
         {
             get { return overtime; }
             set { overtime = false; }
+        }
+
+        //constructors
+        protected BallSport()
+        { }
+
+        protected BallSport(string bestPlayer)
+        {
+            this.bestPlayer = bestPlayer;
+        }
+
+        //methods
+        protected void Message()
+        {
+            Console.WriteLine("Real sports require balls.\n");
         }
     }
 }
