@@ -16,11 +16,10 @@ namespace SB_012317_Inheritance_Practice
         //constructors
         public Basketball()
         {
-            this.TimeMin = 48;
-        }
-        public Basketball(bool overtime)
-        {
-            if (overtime == true)
+            Console.WriteLine("Is there any overtime? Enter yes or no:\n");
+            string extraTime = Console.ReadLine();
+            extraTime.ToLower();
+            if (extraTime == "yes")
             {
                 Overtime = true;
                 Console.WriteLine("How many overtime periods?\n");
@@ -29,7 +28,7 @@ namespace SB_012317_Inheritance_Practice
                 periodMin = 5;
                 TimeMin = 48 + (periods * periodMin);
             }
-            else if (overtime == false)
+            else if (extraTime == "no")
             {
                 Overtime = false;
                 TimeMin = 48;
@@ -46,7 +45,7 @@ namespace SB_012317_Inheritance_Practice
         //methods
         public void PrintBallShape()
         {
-            Console.WriteLine("In basketball, the ball is round.\n");
+            Console.WriteLine("\nIn basketball, the ball is " + BallShape + ".\n");
         }
 
         public void PrintTimeMin()

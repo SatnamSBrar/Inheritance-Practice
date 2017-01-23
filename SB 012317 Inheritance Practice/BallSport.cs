@@ -9,7 +9,7 @@ namespace SB_012317_Inheritance_Practice
     class BallSport
     {
         //fields
-        private string ballShape;
+        private string ballShape = "round"; //PrintBallShape() only works if I have string initialized in the field
         private int timeMin;
         private bool overtime;
 
