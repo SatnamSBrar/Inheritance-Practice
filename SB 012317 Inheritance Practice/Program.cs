@@ -10,11 +10,13 @@ namespace SB_012317_Inheritance_Practice
     {
         static void Main(string[] args)
         {
-            Soccer soccerGame1 = new Soccer();
+            Console.WriteLine("Soccer game information:\n");
+            Soccer soccerGame1 = new Soccer(true);
             soccerGame1.PrintBallShape();
             soccerGame1.PrintTimeMin();
 
-            Basketball bballGame1 = new Basketball();
+            Console.WriteLine("\nBasketball game information:\n");
+            Basketball bballGame1 = new Basketball(true);
             bballGame1.PrintBallShape();
             bballGame1.PrintTimeMin();
         }

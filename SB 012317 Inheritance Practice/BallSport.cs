@@ -11,16 +11,23 @@ namespace SB_012317_Inheritance_Practice
         //fields
         private string ballShape;
         private int timeMin;
+        private bool overtime;
 
         //properties
         protected string BallShape
         {
             get { return ballShape; }
+            set { ballShape = "round"; }
         }
         protected int TimeMin
         {
             get { return timeMin; }
             set { timeMin = value; }
+        }
+        protected bool Overtime
+        {
+            get { return overtime; }
+            set { overtime = false; }
         }
     }
 }

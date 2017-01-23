@@ -13,6 +13,19 @@ namespace SB_012317_Inheritance_Practice
         {
             this.TimeMin = 90;
         }
+        public Soccer(bool overtime)
+        {
+            if (overtime == true)
+            {
+                Overtime = true;
+                TimeMin = 120;
+            }
+            else if (overtime == false)
+            {
+                Overtime = false;
+                TimeMin = 90;
+            }
+        }
 
         //methods
         public void PrintBallShape()
@@ -22,7 +35,14 @@ namespace SB_012317_Inheritance_Practice
 
         public void PrintTimeMin()
         {
-            Console.WriteLine("This game will last " + TimeMin + " minutes.\n");
+            if (Overtime == false)
+            {
+                Console.WriteLine("This game will last " + TimeMin + " minutes.\n");
+            }
+            else if (Overtime == true)
+            {
+                Console.WriteLine("This game will last " + TimeMin + " minutes.\n");
+            }
         }
     }
 }
