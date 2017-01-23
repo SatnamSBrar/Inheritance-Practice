@@ -8,5 +8,18 @@ namespace SB_012317_Inheritance_Practice
 {
     class BallSport
     {
+        //fields
+        private string ballShape;
+        private int timeMin;
+
+        //properties
+        protected string BallShape
+        {
+            get { return ballShape; }
+        }
+        protected int TimeMin
+        {
+            get { return timeMin; }
+        }
     }
 }
