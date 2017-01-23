@@ -9,7 +9,7 @@ namespace SB_012317_Inheritance_Practice
     class BallSport
     {
         //fields
-        private string ballShape = "round"; //PrintBallShape() only works if I have string initialized in the field
+        private string ballShape;
         private int timeMin;
         private bool overtime;
 
@@ -17,7 +17,7 @@ namespace SB_012317_Inheritance_Practice
         protected string BallShape
         {
             get { return ballShape; }
-            set { ballShape = "round"; }
+            set { this.ballShape = "round"; }
         }
         protected int TimeMin
         {

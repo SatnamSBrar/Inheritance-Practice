@@ -11,6 +11,8 @@ namespace SB_012317_Inheritance_Practice
         //constructors
         public Soccer()
         {
+            BallShape = "round";
+
             Console.WriteLine("Is there any overtime? Enter yes or no:\n");
             string extraTime = Console.ReadLine();
             extraTime.ToLower();
