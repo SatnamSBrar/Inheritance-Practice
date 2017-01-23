@@ -8,6 +8,13 @@ namespace SB_012317_Inheritance_Practice
 {
     class Soccer : BallSport
     {
+        //constructors
+        public Soccer()
+        {
+            this.TimeMin = 90;
+        }
+
+        //methods
         public void PrintBallShape()
         {
             Console.WriteLine("In soccer, the ball is round.\n");
@@ -15,7 +22,7 @@ namespace SB_012317_Inheritance_Practice
 
         public void PrintTimeMin()
         {
-            Console.WriteLine("Soccer games last 90 minutes.\n");
+            Console.WriteLine("This game will last " + TimeMin + " minutes.\n");
         }
     }
 }

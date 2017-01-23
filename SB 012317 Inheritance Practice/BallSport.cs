@@ -20,6 +20,7 @@ namespace SB_012317_Inheritance_Practice
         protected int TimeMin
         {
             get { return timeMin; }
+            set { timeMin = value; }
         }
     }
 }
