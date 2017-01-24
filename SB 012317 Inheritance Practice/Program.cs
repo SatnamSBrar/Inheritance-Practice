@@ -12,13 +12,13 @@ namespace SB_012317_Inheritance_Practice
         {
             Console.WriteLine("Soccer game information:\n");
             Soccer soccerGame1 = new Soccer("left wing");
-            soccerGame1.PrintBallShape();
+            soccerGame1.PrintInfo();
             soccerGame1.BestPlayer();
             soccerGame1.PrintTimeMin();
 
             Console.WriteLine("\nBasketball game information:\n");
             Basketball bballGame1 = new Basketball("power forward");
-            bballGame1.PrintBallShape();
+            bballGame1.PrintInfo();
             bballGame1.BestPlayer();
             bballGame1.PrintTimeMin();
         }

@@ -19,7 +19,7 @@ namespace SB_012317_Inheritance_Practice
         protected string BallShape
         {
             get { return ballShape; }
-            set { this.ballShape = "round"; }
+            set { this.ballShape = value; }
         }
         protected int TimeMin
         {
@@ -42,9 +42,9 @@ namespace SB_012317_Inheritance_Practice
         }
 
         //methods
-        protected void Message()
+        public virtual void PrintInfo()
         {
-            Console.WriteLine("Real sports require balls.\n");
+            Console.WriteLine("\nReal sports require balls.\n");
         }
     }
 }

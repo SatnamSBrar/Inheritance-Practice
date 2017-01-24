@@ -31,10 +31,10 @@ namespace SB_012317_Inheritance_Practice
         }
 
         //methods
-        public void PrintBallShape()
+        public override void PrintInfo()
         {
-            this.Message();
-            Console.WriteLine("\nIn soccer, the ball is " + BallShape + ".\n");
+            base.PrintInfo();
+            Console.WriteLine("In soccer, the ball is " + BallShape + ".\n");
         }
         public void BestPlayer()
         {
